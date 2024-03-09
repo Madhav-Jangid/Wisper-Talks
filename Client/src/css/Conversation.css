@@ -1,0 +1,285 @@
+.convoComponent {
+  width: calc(100% - 30vw);
+  height: 100%;
+  background-color: var(--primary-blue1);
+  border-radius: 15px;
+  padding: 15px 10px;
+}
+
+.convoTopNav {
+  padding: 10px;
+  border-radius: inherit;
+  background-color: var(--primary-blue2);
+  display: flex;
+  justify-content: space-between;
+}
+
+.convoUserDetails {
+  display: flex;
+  align-items: center;
+}
+
+.convoUserDetails h3 {
+  margin-left: 10px;
+}
+
+.convoChatOptions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.convoChatOptions .MuiSvgIcon-root {
+  color: var(--primary-text-light);
+}
+
+.convoChatOptions .dropDown {
+  width: 1px;
+  height: 80%;
+  background-color: #0008;
+}
+
+.conversation {
+  padding: 10px;
+  border-radius: inherit;
+  background-color: transparent;
+  height: calc(100% - 8rem);
+  overflow-y: scroll;
+} 
+
+.convoInputs {
+  padding: 10px;
+  border-radius: inherit;
+  background-color: var(--primary-blue2);
+  display: flex;
+  gap: 4px;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.convoInputs input {
+  background-color: var(--primary-blue1);
+  color: var(--primary-text-light);
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  padding: 0 15px;
+  outline: none;
+}
+
+.MuiSpeedDial-fab {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+
+.convoInputs input:focus-within {
+  outline: 1px solid var(--primary-blue4);
+}
+
+.convoInputs .material-icons,
+.convoInputs .MuiSvgIcon-root,
+.convoInputs .phosphor-icon {
+  color: var(--primary-text-light);
+}
+
+
+.avatarImage {
+  width: min(2.9rem, 2.9rem);
+  height: min(2.9rem, 2.9rem);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: contain;
+  object-position: center;
+  border: 2px solid #0001;
+}
+
+.CommonComponent {
+  width: calc(100% - 30vw);
+  height: 100%;
+  background-color: var(--primary-blue3);
+  border-radius: 15px;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-name {
+  color: var(--primary-blue4);
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.features {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.features li {
+  margin-bottom: 5px;
+}
+
+.call-to-action {
+  color: #555;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.messageFromCurrentUser,
+.messageFromSecondUser {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: 10px 0  ;
+}
+
+.messageFromCurrentUser {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+}
+
+.messageFromCurrentUser .avatarContainer,
+.messageFromSecondUser .avatarContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  align-self: flex-end;
+  background-color: blue;
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  margin: 0 0 0 5px;
+}
+
+.messageFromCurrentUser .textMessageCont,
+.messageFromSecondUser .textMessageCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* text-align: end; */
+  max-width: 60%;
+  padding: 10px 15px 5px;
+  gap: 0;
+  background-color: var(--primary-blue3);
+  border-radius: 20px;
+  border-bottom-right-radius: 0;
+  position: relative;
+}
+
+.textMessageCont h4 {
+  font-size: 18px;
+  text-align: start;
+}
+
+.messageFromCurrentUser .textMessageCont h4,
+.messageFromCurrentUser .textMessageCont h6{
+  text-align: end;
+}
+
+.textMessageCont h6 {
+  font-size: 12px;
+}
+
+.textMessageCont h4,
+.textMessageCont h6 {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.messageFromCurrentUser span,
+.messageFromSecondUser span {
+  color: var(--primary-text-dark);
+  min-block-size: 100%;
+  margin-top: 5px;
+  font-size: 12px;
+}
+
+.messageFromSecondUser {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+}
+
+.messageFromSecondUser .avatarContainer {
+  align-self: flex-start;
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.messageFromSecondUser .textMessageCont {
+  background-color: var(--primary-blue4);
+  border-radius: 0px 10px 10px 10px;
+  text-align: start;
+}
+
+.messageFromSecondUser .textMessageCont h4,
+.messageFromSecondUser .textMessageCont h6,
+.messageFromSecondUser .textMessageCont span {
+  color: var(--custom);
+}
+
+.textMessageCont h6,
+.textMessageCont span {
+  opacity: .6;
+}
+
+.messageFromSecondUser .textMessageCont::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid var(--primary-blue4);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: 0px;
+  left: -10px;
+}
+
+.messageFromCurrentUser .textMessageCont::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 10px solid var(--primary-blue3);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: 0;
+  right: -10px;
+}
+
+#deaultConvo{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

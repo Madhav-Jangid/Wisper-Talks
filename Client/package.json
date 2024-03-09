@@ -2,13 +2,34 @@
   "name": "wisper-talks",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000",
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.6",
+    "@mui/material": "^5.15.6",
+    "@phosphor-icons/react": "^2.0.15",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "boxicons": "^2.1.4",
+    "emoji-picker-react": "^4.7.7",
+    "prompt-confirm": "^2.0.4",
     "react": "^18.2.0",
+    "react-confirm": "^0.3.0-7",
+    "react-confirm-alert": "^3.0.6",
+    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "^18.2.0",
+    "react-otp-input": "^3.1.1",
+    "react-router-dom": "^6.21.3",
     "react-scripts": "5.0.1",
+    "react-scroll": "^1.9.0",
+    "react-toastify": "^10.0.4",
+    "react-top-loading-bar": "^2.3.1",
+    "reactjs-otp-input": "^2.0.8",
+    "simple-peer": "^9.11.1",
+    "socket.io-client": "^4.7.4",
+    "sweetalert2": "^11.10.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +55,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "source-map-loader": "^5.0.0"
   }
 }

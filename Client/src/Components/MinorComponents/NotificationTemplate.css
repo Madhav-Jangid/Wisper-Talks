@@ -1,0 +1,30 @@
+.NotificationTemplate{
+    padding: 15px 10px;
+    display: flex;
+    gap: 10px;
+    margin: 3px 0;
+    border-radius: inherit;
+    border-bottom: 1px solid var(--primary-blue3);
+    transition: .15s all ease-out;
+    background-color: var(--primary-blue1);
+}
+
+.NotificationTemplate h3{
+    font-family: 'Exo 2', 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.notification .mainHeading{  
+    margin-bottom: 10px;
+}
+
+.confirmationLogo svg{
+    font-size: 25px;
+}
+
+.confirmationLogo .confirmIcon{
+    color: #1aff26;
+}
+.confirmationLogo .cancelIcon{
+    color: #ff2020;
+}
