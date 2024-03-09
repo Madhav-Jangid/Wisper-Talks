@@ -34,6 +34,14 @@ app.use(session({
   unid: '',
 }))
 
+
+app.use('/',(req,res) => {
+  res.json({
+    message: 'server is working fine'
+  })
+})
+
+
 app.use((req, res, next) => {
   if (req.session.user && req.cookies.userLogined) {
     res.send('/home')
